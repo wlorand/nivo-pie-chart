@@ -12,6 +12,10 @@ body {
   justify-content: center;
 }
 
+.app-header > h1 {
+  margin: 20px;
+}
+
 .chart-height-400 {
   height: 400px;
 }
