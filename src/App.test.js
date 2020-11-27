@@ -1,8 +1,11 @@
+// testing libs
 import { render, screen } from '@testing-library/react';
+
+// child components
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders asset categories heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headingElement = screen.getByText(/Asset Categories/i);
+  expect(headingElement).toBeInTheDocument();
 });
