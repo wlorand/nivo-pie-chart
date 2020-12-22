@@ -1,7 +1,7 @@
 // import React from 'react'; // not needed for react 17
 
 // mock data
-import progLangData from './mock-data/progLangData';
+import asset_cat_data from './mock-data/asset_cat_data.json';
 
 // child components
 import AssetCategoryPieChart from './components/AssetCategoryPieChart';
@@ -15,7 +15,7 @@ function App() {
       <header className="app-header">
         <h1>Nivo Pie Chart Proto: AIMM Asset Categories</h1>
       </header>
-      <AssetCategoryPieChart data={progLangData} />
+      <AssetCategoryPieChart data={asset_cat_data} />
     </>
   );
 }

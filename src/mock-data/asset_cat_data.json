@@ -1,0 +1,17 @@
+[
+  {
+    "id": "KE",
+    "label": "Knowledge Engine",
+    "value": 25
+  },
+  {
+    "id": "NLP",
+    "label": "Natural Language Processing",
+    "value": 67
+  },
+  {
+    "id": "ML",
+    "label": "Machine Learning",
+    "value": 110
+  }
+]
