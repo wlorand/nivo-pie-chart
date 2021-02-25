@@ -23,7 +23,15 @@ body {
   padding: 0;
 }
 
-.asset-cat-pie {
+.panel-title {
+  /* align-items: center; */
+  color: rgb(0, 119, 197);
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.chart-container {
   height: 300px;
   background: rgb(0, 0, 0);
 }
@@ -32,12 +40,4 @@ body {
   fill: rgb(256, 256, 256);
   font-size: 32px;
   font-weight: 600;
-}
-
-.panel-title {
-  /* align-items: center; */
-  color: rgb(0, 119, 197);
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
 }

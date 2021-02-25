@@ -8,13 +8,9 @@ import '../styles/app.css';
 
 // Centered Metric
 const CenteredMetric = ({ dataWithArc, centerX, centerY }) => {
-  // todo: replace with a reduce
-  let total = 0;
-  dataWithArc.forEach((datum) => {
-    total += datum.value;
-  });
-
-  console.log(dataWithArc instanceof Array); // true
+  let total = dataWithArc.reduce((acc, datum) => {
+    return acc + datum.value;
+  }, 0);
 
   return (
     <text
@@ -31,7 +27,7 @@ const CenteredMetric = ({ dataWithArc, centerX, centerY }) => {
 
 const AssetCategoryPie = ({ data }) => {
   return (
-    <div className="asset-cat-pie">
+    <div className="chart-container">
       <h3 className="panel-title">AIMM Asset Categories</h3>
       <ResponsivePie
         data={data}
